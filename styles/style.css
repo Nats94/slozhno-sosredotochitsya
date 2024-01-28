@@ -1,5 +1,289 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color);
+  font-family: var(--font-family), Arial, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: 1.3;
+  background-color: var(--bg-color);
+  padding: var(--page-padding);
+  max-width: 1024px;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  align-items: center;
+  height: 100vh;
+  min-height: 768px;
+  grid-template-columns: 50%;
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  inset-block-start: 20px;
+  inset-inline-end: -20px;
+  border-inline-end: 1px solid var(--menu-color);
+  border-block-start: 1px solid var(--menu-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  inset-block-end: 20px;
+  border-inline-start: 1px solid var(--menu-color);
+  border-block-end: 1px solid var(--menu-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  grid-column-start: 1;
+  grid-row: 1; 
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 13px;
+  }
+
+  .header__theme-menu-button.header__theme-menu-button_active{
+  border: solid var(--menu-color) 1px;
+  outline: 2px;
+  pointer-events: none;
+}
+
+  
+.header__theme-menu-button:hover{
+  border: solid var(--menu-color) 1px;
+  outline: 2px;
+}
+.header__theme-menu-button:focus{
+  text-decoration: underline;
+}
+.header__theme-menu-button:focus-visible{
+  border: solid var(--menu-color) 1px;
+  outline: 2px;
+}
+.header__theme-menu-button{
+font-family:var(--font-family), Arial sans-serif;
+color: var(--menu-color);
+border:none;
+background-color: transparent;
+text-align: center;
+font-size: var(--font-size);
+font-weight: 400;
+line-height: 18px; 
+ cursor: pointer;
+ padding: 0 13px
+} 
+
+.main_title{
+   grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 2; 
+  display: flex;
+  gap: 30px;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+  text-shadow: 4px 4px 0px var(--shadow-color);
+  color: var(--main-title-color);
+} 
+
+.header_text{
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row: 3;
+  justify-self: end;
+  align-self: center;
+  background-color: var(--title-bg-color);
+  color: black;
+  width: clamp(355px, min_content, 491px);
+  font-weight: 700;
+}
+
+
+
+
+.content{
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* margin: var(--page-padding); */
+}
+
+.grid_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.section_content{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 649px;
+}
+
+.section_content_title{
+
+  font-size: var(--font-size);
+  font-weight: 700;
+  color: var(--section-content-title-color);
+background-color: var(--title-bg-color);
+}
+.section_title{
+  font-size:var(--font-size);
+  color:black;
+  margin-bottom:var(--page-padding);
+  color: var(--section-title-color);
+}
+
+.horizontal_cards{
+  display: flex;
+  gap:10px;
+}
+
+.cards__sub_title{
+  color:#353430;
+  background-color: var(--title-bg-color);
+  font-weight: 400;
+}
+
+.artical_cards{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section_content_text{
+  color: var(--text-color);
+}
+.link{
+  text-decoration: none;  
+  text-shadow: 2px 2px 0px var(--shadow-color);
+}
+.link:hover{
+  text-decoration: underline;
+}
+.link:focus{
+ border: 1px solid var(--text-color);
+ outline: 1px;
+}
+.link:focus-visible{
+  border: 1px solid var(--text-color);
+}
+
+.images__section {
+  padding: 20px;
+  margin-block-start: 40px;
+}
+
+.main__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 260px 315px 428px;
+  margin-block-start: 20px;
+  gap: 20px;
+}
+
+.main__images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.image2 {
+  grid-column: 3 / 4;
+  grid-row: span 2;
+}
+
+.image3 {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+}
+
+.image4 {
+  grid-row: span 1;
+}
+
+.image5 {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  margin-block-start: 5px;
+}
+
+.footer{
+  min-height: 768px;
+  height: 100hv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width <= 768px){
+  .header__theme-menu-list{
+    flex-direction: column;
+  }
+  .header__theme-menu {
+    justify-self: end;
+    grid-column-start: 5;
+    grid-row: 1;
+}
+.horizontal_cards{
+  flex-direction: column;
+}
+
+.main_title{
+  grid-column-end: 6;
+}
+.main__images {
+  grid-template-rows: 192px 230px 318px;
+}
+
+.image5 {
+  margin-block-start: 0;
+}
+}
+
+@media (width <= 375px){
+  .header__theme-menu {
+    justify-self: end;
+    grid-column-start: 4;
+    grid-row: 1;
+}
+  .header_text{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .grid_section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__images{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .header{
+    background-image: var(--background-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
