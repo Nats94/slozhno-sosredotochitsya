@@ -2,7 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
+:root {
 --font-size: 18px;
 --title-font-size: 157px;
 --font-family: "IBM Plex Mono";
@@ -12,7 +12,7 @@
 --text-color: black;
 --shadow-color: #ff0070;
 --page-padding: 20px;
---menu-color:black;
+--menu-color: black;
 --section-content-title-color:black;
---section-title-color:black;
+--section-title-color: black;
 }

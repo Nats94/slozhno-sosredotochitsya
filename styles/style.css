@@ -113,15 +113,11 @@
   font-weight: 700;
 }
 
-
-
-
 .content {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 80px;
-  /* margin: var(--page-padding); */
 }
 
 .grid_section {
@@ -141,7 +137,6 @@
 }
 
 .section_content_title {
-
   font-size: var(--font-size);
   font-weight: 700;
   color: var(--section-content-title-color);
@@ -153,6 +148,11 @@
   color: black;
   margin-bottom: var(--page-padding);
   color: var(--section-title-color);
+  font-weight: 700; 
+}
+
+.second__section.section_title {
+  max-width: 33%;
 }
 
 .horizontal_cards {
