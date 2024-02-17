@@ -27,8 +27,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  inset-block-start: 20px;
-  inset-inline-end: -20px;
+  inset-block-start: 0px;
+  inset-inline-end: 0px;
   border-inline-end: 1px solid var(--menu-color);
   border-block-start: 1px solid var(--menu-color);
 }
@@ -38,7 +38,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  inset-block-end: 20px;
+  inset-block-end: 0px;
   border-inline-start: 1px solid var(--menu-color);
   border-block-end: 1px solid var(--menu-color);
 }
@@ -171,7 +171,7 @@
 .artical_cards {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 
