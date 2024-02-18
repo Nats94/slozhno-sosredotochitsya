@@ -16,3 +16,20 @@
   --title-color: #db00ff;
   --main-font-family: "IBM Plex Mono";
 }
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --section-title-color: #ff0070;
+    --section-content-title-color:black;
+    --bg-color: #000028;
+    --background-image: url(../images/cover-image-dark.png);
+    --title-bg-color: #ff0070;
+    --text-color: #f1b2ce;
+    --menu-color: #ff0070;
+    --main-title-color: #DB00FF;
+    --title-color: #db00ff;
+    --main-font-family: "IBM Plex Mono";
+  }
+
+
