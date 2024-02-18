@@ -6,7 +6,7 @@
 
 .page.theme_dark {
   --section-title-color: #ff0070;
-  --section-content-title-color:black;
+  --section-content-title-color: black;
   --bg-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
   --title-bg-color: #ff0070;
@@ -21,7 +21,7 @@
 
   :root {
     --section-title-color: #ff0070;
-    --section-content-title-color:black;
+    --section-content-title-color: black;
     --bg-color: #000028;
     --background-image: url(../images/cover-image-dark.png);
     --title-bg-color: #ff0070;
@@ -32,4 +32,4 @@
     --main-font-family: "IBM Plex Mono";
   }
 
-
+}
